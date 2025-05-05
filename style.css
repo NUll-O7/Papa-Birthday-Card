@@ -1,0 +1,183 @@
+/* Base styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffaf0;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .hero button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+  }
+  
+  #countdown {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #5a5a5a;
+    animation: fadeInUp 1.2s ease-out;
+  }
+  
+  /* Birthday Card */
+  .card {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: zoomIn 0.6s ease forwards;
+    z-index: 1000;
+    position: relative;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Gallery Section */
+  .gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fef1e6;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .gallery h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .photos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: slideIn 0.5s ease-in;
+  }
+  
+  .photos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+  
+  /* Slideshow Section */
+  .slideshow-container {
+    text-align: center;
+    background: #fff;
+    padding: 50px 20px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .slideshow-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .slideshow {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .slide {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Confetti behind content */
+  canvas#confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

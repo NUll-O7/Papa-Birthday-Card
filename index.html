@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Papa!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <audio id="bgMusic" src="audio/song.mp3" autoplay loop></audio>
+
+
+  <div class="hero">
+    <h1>Happy Birthday, Dad! 🎉</h1>
+    <p>Thank you for being our rock. You mean the world to us.</p>
+    <button onclick="showWish()">Open Your Card 💌</button>
+    <div id="countdown"></div>
+  </div>
+
+  <div class="card hidden" id="birthdayCard">
+    <h2>🎂 Dear Papa,</h2>
+    <p>        Happy Birthday to the greatest man I know. Your strength, your kindness, and your endless love have shaped who I am in every way. You've always been my guide, my protector, and my biggest cheerleader.
+        
+        Every laugh we’ve shared, every lesson you’ve taught, every time you’ve held my hand through tough times — I carry it all in my heart. Today, I just want to say thank you... for being you.
+        
+        You deserve all the joy in the world, not just today, but every day.
+        
+        Love you always💖</p>
+    <button onclick="hideWish()">Close</button>
+  </div>
+
+  <div class="slideshow-container">
+    <h2></h2>
+    <div class="slideshow" id="slideshow">
+      <img src="IMG-20250505-WA0011.jpg" class="slide" />
+      <img src="IMG-20250505-WA0012.jpg" class="slide" />
+      <img src="IMG-20250505-WA0013.jpg" class="slide" />
+      <img src="IMG-20250505-WA0014.jpg" class="slide" />
+      <img src="IMG-20250505-WA0015.jpg" class="slide" />
+      <img src="IMG-20250505-WA0016.jpg" class="slide" />
+      <img src="IMG-20250505-WA0017.jpg" class="slide" />
+      <img src="IMG-20250505-WA0018.jpg" class="slide" />
+      <img src="IMG-20250505-WA0019.jpg" class="slide" />
+      <img src="IMG-20250505-WA0020.jpg" class="slide" />
+      <img src="IMG-20250505-WA0021.jpg" class="slide" />
+      <img src="IMG-20250505-WA0022.jpg" class="slide" />
+      <img src="IMG-20250505-WA0023.jpg" class="slide" />
+      <img src="IMG-20250505-WA0024.jpg" class="slide" />
+      <img src="IMG-20250505-WA0025.jpg" class="slide" />
+      <img src="IMG-20250505-WA0026.jpg" class="slide" />
+      <img src="IMG-20250505-WA0027.jpg" class="slide" />
+      <img src="IMG-20250505-WA0028.jpg" class="slide" />
+    </div>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
