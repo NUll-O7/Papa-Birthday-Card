@@ -27,19 +27,21 @@ body {
   
   .hero button {
     font-size: 1.2em;
-    padding: 10px 20px;
-    background-color: #ff7f50;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(255, 94, 98, 0.4);
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
   
   .hero button:hover {
-    background-color: #ff6347;
-    transform: scale(1.05);
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 12px 24px rgba(255, 94, 98, 0.5);
   }
+  
   
   #countdown {
     margin-top: 20px;
@@ -50,17 +52,20 @@ body {
   
   /* Birthday Card */
   .card {
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    animation: zoomIn 0.6s ease forwards;
+    animation: zoomIn 0.8s ease forwards;
     z-index: 1000;
     position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
+  
   
   .hidden {
     display: none;
@@ -102,12 +107,23 @@ body {
   }
   
   /* Slideshow Section */
-  .slideshow-container {
+  /* .slideshow-container {
     text-align: center;
     background: #fff;
     padding: 50px 20px;
     animation: fadeInUp 1s ease;
+  } */
+  .slideshow-container {
+    background: linear-gradient(135deg, #ffffff, #ffe5ec);
+    padding: 40px;
+    border-radius: 30px;
+    margin: 50px auto;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    text-align: center;
+    position: relative;
   }
+  
   
   .slideshow-container h2 {
     font-size: 2em;
